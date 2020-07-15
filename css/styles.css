@@ -24,16 +24,38 @@ ul {
 
 /* Heading-1 */
 .top-1 {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
-.heading-1 {
-  /* border: 1px solid #FFFFFF; */
-  /* border-radius: 10px; */
-  font-size: 25px;
-  padding: 0.8rem 1rem;
-  font-weight: 400;
+.top-2 {
+  margin-top: 40px;
 }
+
+.btn-1 {
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 0.5rem 1.8rem;
+  margin: auto;
+  display: flex;
+  background: transparent;
+  color: #fff;
+  cursor: context-menu !important
+}
+
+.btn-2 {
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 0.1rem 1rem;
+  margin: auto;
+  display: flex;
+  background: #fff;
+  color: #000;
+}
+
+/* .heading-1 {
+  
+} */
 
 
 /* NAvbar */
@@ -41,6 +63,7 @@ ul {
 .navbar .navbar-toggler:focus {
   outline: none
 }
+
 .line {
   width: 30px;
   height: 3px;
@@ -70,6 +93,7 @@ ul {
 .navbar form button {
   height: 30px;
 }
+
 .navbar form input {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -96,7 +120,7 @@ ul {
 .showcase .right-showcase .hand {
   position: absolute;
   right: 0;
-  top:35px;
+  top: 35px;
   width: 500px;
 }
 
@@ -123,11 +147,22 @@ ul {
 
 /* How */
 .how .how-steps .img-1,
-.how .how-steps .img-2
-.how .how-steps .img-3 {
+.how .how-steps .img-2,
+.how .how-steps .img-3,
+.how .how-steps .img-4 {
   position: relative;
-  justify-self: center
+  justify-self: center;
 }
+
+.how .how-steps .phone {
+  width: 80%;
+  position: relative
+}
+
+.how .how-steps .phone > img{
+  width: 100%
+}
+
 
 .how .how-steps .phone-body {
   position: absolute;
@@ -143,4 +178,39 @@ ul {
 
 .how .how-steps .img-3 {
   transform: translateY(100%)
+}
+
+.how .how-steps .img-4 {
+  transform: translateY(150%)
+}
+
+.how .how-steps .img-2>div>div img,
+.how .how-steps .img-3>div>div img,
+.how .how-steps .img-4>div>div img {
+  width: 100px;
+}
+
+/* TEstimonials */
+.testimonials {
+  margin-top: calc(326px * 1.5 + 100px)
+}
+
+.testimonials .testimonial-container {
+  background: #fff;
+  padding: 100px;
+  color: #000
+}
+
+.testimonials .testimonial-item {
+  padding: 25px;
+  border: 2px solid #F53838;
+  border-radius: 10px;
+}
+
+.testimonials .name-country .country {
+  font-size: 0.7rem
+}
+
+.testimonial-item>p {
+  font-size: 0.9rem
 }
