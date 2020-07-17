@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +19,7 @@ a:hover {
 }
 
 ul {
-  list-style: none
+  list-style: none;
 }
 
 /* Heading-1 */
@@ -32,7 +32,7 @@ ul {
 }
 
 .btn-1 {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   font-size: 25px;
   padding: 0.5rem 1.8rem;
@@ -40,11 +40,11 @@ ul {
   display: flex;
   background: transparent;
   color: #fff;
-  cursor: context-menu !important
+  cursor: context-menu !important;
 }
 
 .btn-2 {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 0.1rem 1rem;
   margin: auto;
@@ -53,15 +53,10 @@ ul {
   color: #000;
 }
 
-/* .heading-1 {
-  
-} */
-
-
-/* NAvbar */
+/* Navbar */
 /* Toggler */
 .navbar .navbar-toggler:focus {
-  outline: none
+  outline: none;
 }
 
 .line {
@@ -83,10 +78,12 @@ ul {
   margin-left: 100px;
 }
 
-.navbar .sign-up {
-  border: 1px solid #F53855;
+.navbar .sign-up button {
+  border: 1px solid #f53855;
   border-radius: 50px;
   padding: 0.1rem 1rem !important;
+  background: transparent;
+  color: #fff
 }
 
 .navbar form input,
@@ -109,27 +106,35 @@ ul {
 }
 
 /* Showcase */
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .showcase .appstore-imgs img {
-  width: 120px
+  width: 120px;
 }
 
 .showcase .right-showcase .cat {
   position: relative;
+  width: 100%;
+  padding-left: 5%;
 }
 
 .showcase .right-showcase .hand {
   position: absolute;
   right: 0;
-  top: 35px;
-  width: 500px;
+  top: 10%;
+  width: 65%;
 }
 
 .showcase .right-showcase img {
-  width: 100%
+  width: 100%;
 }
 
 .showcase .left-showcase .showcase-learning {
-  font-size: 2rem
+  font-size: 1.7rem;
 }
 
 /* About */
@@ -141,11 +146,20 @@ ul {
   margin: 30px 0;
 }
 
+.about .about-left {
+  width: 70%;
+}
+
 .about .about-left img {
-  width: 70%
+  width: 100%;
 }
 
 /* How */
+.how-steps {
+  display: flex;
+  justify-content: space-between
+}
+
 .how .how-steps .img-1,
 .how .how-steps .img-2,
 .how .how-steps .img-3,
@@ -156,13 +170,12 @@ ul {
 
 .how .how-steps .phone {
   width: 80%;
-  position: relative
+  position: relative;
 }
 
-.how .how-steps .phone > img{
-  width: 100%
+.how .how-steps .phone>img {
+  width: 100%;
 }
-
 
 .how .how-steps .phone-body {
   position: absolute;
@@ -173,15 +186,15 @@ ul {
 }
 
 .how .how-steps .img-2 {
-  transform: translateY(50%)
+  transform: translateY(50%);
 }
 
 .how .how-steps .img-3 {
-  transform: translateY(100%)
+  transform: translateY(100%);
 }
 
 .how .how-steps .img-4 {
-  transform: translateY(150%)
+  transform: translateY(150%);
 }
 
 .how .how-steps .img-2>div>div img,
@@ -190,27 +203,159 @@ ul {
   width: 100px;
 }
 
-/* TEstimonials */
+/* Testimonials */
 .testimonials {
-  margin-top: calc(326px * 1.5 + 100px)
+  margin-top: calc(326px * 1.5 + 100px);
 }
 
 .testimonials .testimonial-container {
   background: #fff;
   padding: 100px;
-  color: #000
+  color: #000;
 }
 
 .testimonials .testimonial-item {
   padding: 25px;
-  border: 2px solid #F53838;
+  border: 2px solid #f53838;
   border-radius: 10px;
 }
 
 .testimonials .name-country .country {
-  font-size: 0.7rem
+  font-size: 0.7rem;
 }
 
 .testimonial-item>p {
-  font-size: 0.9rem
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.footer .subscribe {
+  background: #e5e2e2;
+  border: 2px solid #6e6666;
+  border-radius: 10px;
+  padding: 2rem 2rem 1.5rem 2rem;
+  color: #000;
+  width: 90vw;
+  max-width: 700px;
+  margin: auto;
+  transform: translateY(-50px)
+}
+
+.footer .subscribe-button {
+  background: #f53838;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  font-size: 0.7rem;
+  outline: none;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscribe-info-small {
+  font-size: 0.6rem
+}
+
+.footer-row {
+  font-size: 0.7rem;
+  line-height: 2.5
+}
+
+.footer-row .i-sketch {
+  width: 100px;
+}
+
+.social-icons img {
+  width: 20px;
+}
+
+.copyright {
+  color: #8C8787
+}
+
+.footer-list {
+  margin-top: 3.5rem
+}
+
+.submit-email {
+  animation: animate-form 0.5s ease-in
+}
+
+@keyframes animate-form {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.submit-email input,
+.submit-email button {
+  font-size: 0.8rem;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit-email input {
+  padding: 0 10px
+}
+
+.submit-email button {
+  background: #f53838;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+@media (max-width: 991px) {
+  .navbar .nav-item {
+    margin-left: 0px;
+  }
+
+  .navbar .notif {
+    margin-left: 0;
+  }
+
+  .navbar form input {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px 0 0 5px;
+    font-size: 0.8rem;
+    width: 200px
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase .left-showcase .showcase-learning {
+    font-size: 1.3rem;
+  }
+
+  /* How */
+  .how .how-steps .img-2>div>div img,
+  .how .how-steps .img-3>div>div img,
+  .how .how-steps .img-4>div>div img {
+    width: 50px;
+  }
+
+  .how .install {
+    font-size: 0.7rem;
+    padding: 0 0.5rem
+  }
+
+  /* Testimonials */
+  .testimonials {
+    margin-top: calc(250px * 1.5 + 100px);
+  }
+
+  .testimonials .testimonial-item {
+    margin-bottom: 40px
+  }
+
 }

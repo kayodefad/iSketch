@@ -1,0 +1,90 @@
+/* Heading-1 */
+.top-1 {
+  margin-top: 70px;
+}
+
+/* Showcase */
+.showcase {
+  flex-direction: column;
+  min-height: 85vh;
+  justify-content: space-around
+}
+
+.left-showcase {
+  order: 2
+}
+
+.showcase .right-showcase .cat {
+  padding-left: 0;
+}
+.showcase .left-showcase {
+  text-align: center
+}
+
+.appstore-imgs {
+  justify-content: center
+}
+
+.showcase .left-showcase .showcase-learning+p {
+  font-size: 0.8rem;
+}
+
+.about .about-left {
+  width: 100%;
+  margin-bottom: 40px
+}
+
+.about .about-list li {
+  font-size: 0.9rem;
+}
+
+/* How */
+.how-steps {
+  display: flex;
+  flex-direction: column
+}
+
+.how .how-steps .phone {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.how .how-steps .img-2 {
+  transform: translateY(0%);
+}
+
+.how .how-steps .img-3 {
+  transform: translateY(0%);
+}
+
+.how .how-steps .img-4 {
+  transform: translateY(0%);
+}
+
+/* Testimonials */
+.testimonials {
+  margin-top: 70px;
+}
+
+.testimonials .testimonial-container {
+  padding: 100px 20px;
+}
+
+/* Footer */
+.footer {
+  padding-bottom: 40px;
+}
+
+.subscribe {
+  flex-direction: column;
+  align-items: flex-start
+}
+
+.show-subscribe {
+  margin-top: 20px
+}
+
+.footer-row {
+  text-align: center
+}
