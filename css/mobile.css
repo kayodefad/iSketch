@@ -88,3 +88,7 @@
 .footer-row {
   text-align: center
 }
+
+.submit-email input {
+  width: 150px
+}

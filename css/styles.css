@@ -296,6 +296,11 @@ ul {
   }
 }
 
+.submit-email {
+  display: flex;
+  flex-direction: row
+}
+
 .submit-email input,
 .submit-email button {
   font-size: 0.8rem;
