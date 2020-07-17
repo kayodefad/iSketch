@@ -89,6 +89,10 @@
   text-align: center
 }
 
+.submit-email {
+  margin-top: 20px
+}
+
 .submit-email input {
-  width: 150px
+  width: 150px;
 }
